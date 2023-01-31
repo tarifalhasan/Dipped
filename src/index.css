@@ -1,0 +1,161 @@
+/* Orbitron Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;500;600;700&family=Inter:wght@400;500&family=Open+Sans:wght@400;500;600&family=Orbitron:wght@500;600;700&family=Poppins:wght@600&display=swap");
+/* Satoshi Font Import Localy */
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: url("./assets/SatoshiFont/fonts/Satoshi-Regular.woff2") format("woff2"),
+    url("./assets/SatoshiFont/fonts/Satoshi-Regular.woff") format("woff"),
+    url("./assets/SatoshiFont/fonts/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+li {
+  font-family: "Satoshi-Regular";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+button {
+  font-family: "Orbitron";
+}
+p {
+  font-family: "Satoshi-Regular";
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #f5f7f9;
+  opacity: 0.6;
+}
+body {
+  background-color: #222222;
+  color: #ffffff;
+}
+.nav_item > li > a {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+}
+@layer components {
+  h2 {
+    font-family: "Orbitron";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 77px;
+    color: #ffffff;
+  }
+  h3 {
+    font-family: "Orbitron";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #ffffff;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 4px;
+    align-items: center;
+  }
+  .btn_primary {
+    background: #4ffef3;
+    box-shadow: 0px 12px 40px -4px rgba(79, 254, 243, 0.3);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    color: #1d242d;
+  }
+  .btn_secondary {
+    background: transparent;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #4ffef3;
+    border: 3px solid #4ffef3;
+  }
+  /* ::::::+++++++ HERO ++++++::::::::::: */
+  .hero_aria {
+    background-image: url(./assets/car1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    height: 467px;
+  }
+  .shape {
+    background-image: url(./assets/line.png);
+  }
+  .services_slider_title {
+    background-image: url(/src/assets/SERVICES.png);
+    background-repeat: no-repeat;
+    height: 100px;
+    display: grid;
+    background-size: contain;
+  }
+  .services_slider_title > h5 {
+    font-family: sans-serif;
+    margin: 43px -4px;
+    color: #4ffef3;
+    margin: 25px 16px 47px 15px;
+    text-align: center;
+    font-size: 18px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+  }
+  .services_slider_title h5::after {
+    content: "";
+    display: block;
+    width: 254px;
+    height: 4px;
+    background: #4ffef3;
+    left: 0;
+    top: 50%;
+    opacity: 0.5;
+    position: absolute;
+  }
+  @media only screen and (max-width: 767px) {
+    .services_slider_title > h5 {
+      margin: 43px -4px;
+      top: -16%;
+      margin: 25px 16px 47px 15px;
+    }
+    .services_slider_title h5::after {
+      left: 0;
+      top: 36%;
+    }
+  }
+  .casuser_container {
+    background: linear-gradient(
+        90.13deg,
+        #101010 0.11%,
+        rgba(13, 13, 13, 0.791667) 77.82%,
+        rgba(0, 0, 0, 0.24) 99.89%
+      ),
+      url(./assets/slider-thumnail.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    padding: 90px 0;
+    margin-top: 5rem;
+  }
+  /* mobile navbar */
+  .mobile_navbar {
+    transform: translateX(0px);
+    transition: 0.5s all ease;
+  }
+}
