@@ -32,6 +32,12 @@ p {
   color: #f5f7f9;
   opacity: 0.6;
 }
+h6,
+input,
+label,
+span {
+  font-family: "Satoshi-Regular";
+}
 body {
   background-color: #222222;
   color: #ffffff;
@@ -157,5 +163,45 @@ body {
   .mobile_navbar {
     transform: translateX(0px);
     transition: 0.5s all ease;
+  }
+  /* ====Contact Page====== */
+  .contact_hero_aria {
+    background: linear-gradient(
+        90.13deg,
+        #101010 0.11%,
+        rgba(13, 13, 13, 0.791667) 77.82%,
+        rgba(0, 0, 0, 0.24) 99.89%
+      ),
+      url(../src/assets/contact/contact_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    background-position: center;
+  }
+  .PhoneInput {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+  .PhoneInput > div > select.PhoneInputCountrySelect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    border: 0;
+    background: #222222 !important;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .PhoneInput > input.PhoneInputInput {
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    color: #222222 !important;
   }
 }

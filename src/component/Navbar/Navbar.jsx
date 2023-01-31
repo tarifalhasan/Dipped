@@ -10,13 +10,12 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <header className="relative ">
+    <header className="px-5 z-50 lg:px-24 fixed w-full bg-transparent">
       <nav>
-        <div className="px-5 lg:px-24">
-          <div className="flex items-center justify-between relative">
+        <div className="">
+          <div className="flex items-center bg-transparent justify-between relative">
             <div className="logo">
               <Link to="/">
-                {" "}
                 <img src={logo} />
               </Link>
             </div>

@@ -21,8 +21,8 @@ const Home = () => {
   return (
     <section>
       <div className="hero_aria ">
-        <div className="relative px-5 lg:px-24">
-          <div className="flex ">
+        <div className="relative px-5 pt-14 lg:px-24 ">
+          <div className="flex">
             <div className="basis-[60%]">
               <h2>The Best Custom Automotive Shop In Las Vegas</h2>
               <p className="py-7">
