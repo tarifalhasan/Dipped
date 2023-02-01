@@ -4,6 +4,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
+import image from "../../assets/contact/car.png";
 import CheckBox from "./CheckBox";
 const Contact = () => {
   const [value, setValue] = useState();
@@ -43,8 +44,11 @@ const Contact = () => {
               times and will be sure to answer your questions.
             </p>
           </div>
-          <div className=" pb-20">
-            <div className="contact_box_2 w-full  lg:w-[60%] mx-auto bg-[#222222] rounded-lg p-8">
+          <div className=" pb-20 flex flex-col gap-5 lg:flex-row">
+            <div className="contact_box_1 basis-[100%] lg:basis-[75%]">
+              <img className="h-full mx-auto" src={image} alt="tarif" />
+            </div>
+            <div className="contact_box_2 bg-[#222222] rounded-lg p-8">
               <form action="post">
                 <div className="input_filed gap-2 grid grid-cols-1 md:grid-cols-2 ">
                   <div>

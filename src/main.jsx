@@ -4,7 +4,16 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 // sweiper style
 import "swiper/css/bundle";
-import { About, Blog, Contact, Services } from "./component";
+import {
+  About,
+  Blog,
+  Contact,
+  PageNotFound,
+  Quotes,
+  Services,
+  WheelRepair,
+  WindowTinting,
+} from "./component";
 
 import "./index.css";
 
@@ -22,6 +31,18 @@ const router = createBrowserRouter([
         element: <Services />,
       },
       {
+        path: "services/quotes",
+        element: <Quotes />,
+      },
+      {
+        path: "services/window_tinting",
+        element: <WindowTinting />,
+      },
+      {
+        path: "/services/wheel_repair",
+        element: <WheelRepair />,
+      },
+      {
         path: "/blog",
         element: <Blog />,
       },
@@ -29,6 +50,7 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
+      { path: "*", element: <PageNotFound /> },
     ],
   },
 ]);

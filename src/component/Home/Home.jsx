@@ -19,11 +19,11 @@ import line1 from "../../assets/line.png";
 import line2 from "../../assets/line_roted.png";
 const Home = () => {
   return (
-    <section>
+    <section className="pt-5 md:pt-20">
       <div className="hero_aria ">
         <div className="relative px-5 pt-14 lg:px-24 ">
           <div className="flex">
-            <div className="basis-[60%]">
+            <div className="basis-full md:basis-[60%]">
               <h2>The Best Custom Automotive Shop In Las Vegas</h2>
               <p className="py-7">
                 Dipped Auto Works specializes in full-car transformations
@@ -41,8 +41,8 @@ const Home = () => {
         </div>
         <div className="w-[60%] float-right mt-[8%] bg-[#4ffef3] h-1"></div>
       </div>
-      <div className="px-5 mt-4 md:mt-16 lg:px-24">
-        <div className="flex py-5 pt-[13rem] md:pt-4 md:justify-end gap-5 items-start">
+      <div className="px-5 mt-20 md:mt-28 lg:px-24">
+        <div className="flex py-5 pt-[13rem] md:pt-6 md:justify-end gap-5 items-start">
           <div>
             <h3>Full Car Transform</h3>
             <Link to="/">Learn more...</Link>
@@ -129,7 +129,7 @@ const Home = () => {
               nec diam ante. Interdum et malesuada fames ac ante ipsum primis in
               faucibus.
             </p>
-            <button class="btn px-5 py-2  btn_primary">Show All</button>
+            <button className="btn px-5 py-2  btn_primary">Show All</button>
           </div>
           {/* effective slider */}
           <div className="px-5 md:px-0">

@@ -44,7 +44,7 @@ export default function Testimonial() {
   return (
     <div className="px-5 md-px-0">
       <div className="py-10 md:px-24">
-        <div class={`services_slider_title ${styles.testomonial_title}`}>
+        <div className={`services_slider_title ${styles.testomonial_title}`}>
           <h5>TESTIMONIAL</h5>
         </div>
       </div>
@@ -81,7 +81,7 @@ export default function Testimonial() {
           <SwiperSlide className={styles.TestimonialSidebar} key={index}>
             <div className="py-10">
               <div className="">
-                <p className="z-10 text-lg opacity-60 lg:px-10 relative">
+                <div className="z-10 text-lg opacity-60 lg:px-10 relative">
                   <RiDoubleQuotesL className="absolute bottom-2 -top-[11px] -z-40 left-[9px] text-[2rem]" />
                   {item.testimonial}
                   <div className="pt-10">
@@ -99,7 +99,7 @@ export default function Testimonial() {
                       </div>
                     </div>
                   </div>
-                </p>
+                </div>
               </div>
             </div>
           </SwiperSlide>

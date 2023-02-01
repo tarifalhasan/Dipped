@@ -26,11 +26,9 @@ button {
 }
 p {
   font-family: "Satoshi-Regular";
-  font-size: 20px;
-  line-height: 30px;
+  @apply text-xl text-[#f5f7f9] opacity-60;
+
   letter-spacing: 0.03em;
-  color: #f5f7f9;
-  opacity: 0.6;
 }
 h6,
 input,
@@ -44,94 +42,62 @@ body {
 }
 .nav_item > li > a {
   font-family: "Orbitron";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 23px;
-  color: #ffffff;
+  @apply font-semibold text-lg text-white;
 }
-@layer components {
+
+@layer base {
   h2 {
-    font-family: "Orbitron";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 54px;
-    line-height: 77px;
-    color: #ffffff;
+    @apply font-bold text-[53px] leading-[75px] text-white;
   }
   h3 {
-    font-family: "Orbitron";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
-    color: #ffffff;
+    @apply font-bold text-[31px] leading-[39px] text-white;
   }
-
+  /* ::::::::::::::::::::::: Responsive Mobile::::::::::::::::::: */
+  @media only screen and (max-width: 767px) {
+    h2 {
+      @apply font-bold text-[33px] leading-[55px] text-white;
+    }
+    h3 {
+      @apply font-bold text-[26px] leading-[39px] text-white;
+    }
+  }
+}
+@layer components {
   .btn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border-radius: 4px;
-    align-items: center;
+    @apply flex flex-row justify-center items-center rounded;
   }
   .btn_primary {
-    background: #4ffef3;
     box-shadow: 0px 12px 40px -4px rgba(79, 254, 243, 0.3);
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 25px;
-    color: #1d242d;
+    @apply font-semibold text-base text-[#1d242d] bg-[#4ffef3];
+  }
+  /* navbar */
+  .drop_down_link {
+    @apply block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white;
   }
   .btn_secondary {
-    background: transparent;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
-    color: #4ffef3;
-    border: 3px solid #4ffef3;
+    @apply bg-transparent font-semibold text-xl rounded text-[#4ffef3];
   }
   /* ::::::+++++++ HERO ++++++::::::::::: */
   .hero_aria {
     background-image: url(./assets/car1.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
-    height: 467px;
+
+    @apply bg-no-repeat bg-right bg-contain h-[467px];
   }
   .shape {
     background-image: url(./assets/line.png);
   }
   .services_slider_title {
     background-image: url(/src/assets/SERVICES.png);
-    background-repeat: no-repeat;
-    height: 100px;
-    display: grid;
-    background-size: contain;
+    @apply bg-no-repeat h-[100px] grid bg-contain;
   }
   .services_slider_title > h5 {
-    font-family: sans-serif;
+    @apply text-[#4ffef3] text-lg max-w-[600px] items-center justify-around relative flex text-center;
     margin: 43px -4px;
-    color: #4ffef3;
     margin: 25px 16px 47px 15px;
-    text-align: center;
-    font-size: 18px;
-    max-width: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: relative;
   }
   .services_slider_title h5::after {
     content: "";
-    display: block;
-    width: 254px;
-    height: 4px;
-    background: #4ffef3;
-    left: 0;
-    top: 50%;
-    opacity: 0.5;
-    position: absolute;
+    @apply block w-[254px] h-1 bg-[#4ff] left-0 top-1/2 opacity-50 absolute;
   }
   @media only screen and (max-width: 767px) {
     .services_slider_title > h5 {
@@ -152,17 +118,13 @@ body {
         rgba(0, 0, 0, 0.24) 99.89%
       ),
       url(./assets/slider-thumnail.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100%;
+    @apply bg-no-repeat bg-cover h-full mt-20;
     padding: 90px 0;
-    margin-top: 5rem;
   }
   /* mobile navbar */
   .mobile_navbar {
-    transform: translateX(0px);
-    transition: 0.5s all ease;
+    transform: translateX(0px) !important;
+    transition: 0.5s all ease !important;
   }
   /* ====Contact Page====== */
   .contact_hero_aria {
@@ -173,35 +135,20 @@ body {
         rgba(0, 0, 0, 0.24) 99.89%
       ),
       url(../src/assets/contact/contact_banner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
-    width: 100%;
-    background-position: center;
+
+    @apply bg-no-repeat h-auto w-full bg-center bg-cover;
   }
+
+  /*  */
   .PhoneInput {
-    display: flex;
-    align-items: center;
-    gap: 13px;
+    @apply flex items-center gap-3;
   }
   .PhoneInput > div > select.PhoneInputCountrySelect {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    border: 0;
+    @apply absolute top-0 left-0 h-full w-full z-50 rounded-none cursor-pointer;
     background: #222222 !important;
-    opacity: 0;
-    cursor: pointer;
   }
   .PhoneInput > input.PhoneInputInput {
-    font-size: 20px;
-    padding: 5px;
-    border-radius: 4px;
-    outline: none;
-    border: none;
+    @apply text-xl p-1 rounded outline-none;
     color: #222222 !important;
   }
   /* ::::::::::::::::services::::::::::::::::: */
@@ -213,13 +160,43 @@ body {
         rgba(0, 0, 0, 0.24) 99.89%
       ),
       url(../src/assets/services/services_banner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    background-position: center;
+
+    @apply bg-no-repeat h-[90vh] w-full bg-cover bg-center;
   }
   .gallary_img {
     grid-template-columns: repeat(2, minmax(0, 300px));
+  }
+  #dropdownHoverButton:hover .service_dropdown {
+    display: block !important;
+  }
+
+  /* :::::::: Wheeel ::::::::: */
+  .wheel_hero_aria {
+    background: linear-gradient(
+        90.13deg,
+        #101010 0.11%,
+        rgba(13, 13, 13, 0.791667) 77.82%,
+        rgba(0, 0, 0, 0.24) 99.89%
+      ),
+      url(../src/assets/wheel.jpg);
+
+    @apply bg-no-repeat h-auto w-full bg-center bg-cover;
+  }
+  .window_tinting_box_2 {
+    border-radius: 20px 0px 0px 20px;
+  }
+  .windowTintingService > li > span {
+    font-family: "Orbitron";
+  }
+  .window_tinting_hero {
+    background: linear-gradient(
+        90.13deg,
+        #101010 0.11%,
+        rgba(13, 13, 13, 0.791667) 77.82%,
+        rgba(0, 0, 0, 0.24) 99.89%
+      ),
+      url(../src/assets/windowtinting.jpg);
+
+    @apply bg-no-repeat h-auto w-full bg-center bg-cover;
   }
 }

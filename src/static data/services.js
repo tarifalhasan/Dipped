@@ -13,6 +13,12 @@ import car1 from "../assets/GALLERY/1.jpg";
 import car2 from "../assets/GALLERY/2.jpg";
 import car3 from "../assets/GALLERY/3.jpg";
 import car4 from "../assets/GALLERY/4.jpg";
+// wiondow tinti
+import serviceWindow1 from "../assets/services/window/1.png";
+import serviceWindow2 from "../assets/services/window/2.png";
+import serviceWindow3 from "../assets/services/window/3.png";
+import serviceWindow4 from "../assets/services/window/4.png";
+import serviceWindow5 from "../assets/services/window/5.png";
 
 export const HomePageServicesSlider = [
     { featureImage: slide1,
@@ -97,4 +103,119 @@ export const servicesData =[
       Still not convinced that we’re the best provider for your Las Vegas car wraps needs? Check out what people are saying about`
   
   },
+];
+export const QuotesData =[
+  {
+      title : "",
+
+      subTitle : `Here at Dipped Auto Works, we often get asked about paint protection film (PPF). What is it? How does it work? Is it really worth the money? Today, we’re here to answer all of your questions about PPF and why it’s a great investment for your vehicle.`
+  
+  },
+  {
+      title : "What is Paint Protection Film?",
+    
+      subTitle : `Paint protection film is a clear urethane film that is applied to the painted surfaces of your vehicle. It acts as a barrier between your paint and the elements, protecting your car’s finish from rocks, salt, UV rays, and other potential hazards.`
+  
+  },
+  {
+      title : "How Does It Work?",
+
+      subTitle : `The film is applied using a wet application process. First, we clean the surface of your car to remove any dirt or debris. Next, we apply a solution that allows the film to bond with your paint. Once the solution has been applied, we lay down the film and use a squeegee to remove any bubbles or air pockets. The final step is to cure the film using UV light.`
+  
+  },
+  {
+      title : "Is It Worth The Money?",
+
+      subTitle : `Absolutely! PPF is an invisible shield for your paint job that can help maintain its showroom-quality shine for years to come. Not to mention, it can also help you avoid costly repairs down the road. If you’re looking for an affordable way to protect your investment, PPF is the way to go.`
+  
+  },
+  {
+      title : "",
+
+      subTitle : `Paint protection film is a must-have for anyone who wants to keep their car looking its best. If you’re looking for an affordable way to protect your vehicle’s paint job, contact us today at Dipped Auto Works. We would be more than happy to answer any questions you have and provide you with a free quote.`
+  
+  },
+];
+export const WindowTintingData =[
+  {
+      title : "",
+
+      subTitle : `Here at Dipped Auto Works, we often get asked about paint protection film (PPF). What is it? How does it work? Is it really worth the money? Today, we’re here to answer all of your questions about PPF and why it’s a great investment for your vehicle.`
+  
+  },
+  {
+
+    
+      subTitle : `Paint protection film is a clear urethane film that is applied to the painted surfaces of your vehicle. It acts as a barrier between your paint and the elements, protecting your car’s finish from rocks, salt, UV rays, and other potential hazards.`
+  
+  },
+  {
+     
+
+      subTitle : `The film is applied using a wet application process. First, we clean the surface of your car to remove any dirt or debris. Next, we apply a solution that allows the film to bond with your paint. Once the solution has been applied, we lay down the film and use a squeegee to remove any bubbles or air pockets. The final step is to cure the film using UV light.`
+  
+  },
+  {
+   
+      subTitle : `Absolutely! PPF is an invisible shield for your paint job that can help maintain its showroom-quality shine for years to come. Not to mention, it can also help you avoid costly repairs down the road. If you’re looking for an affordable way to protect your investment, PPF is the way to go.`
+  
+  },
+  {
+
+
+      subTitle : `Paint protection film is a must-have for anyone who wants to keep their car looking its best. If you’re looking for an affordable way to protect your vehicle’s paint job, contact us today at Dipped Auto Works. We would be more than happy to answer any questions you have and provide you with a free quote.`
+  
+  },
+];
+
+// WIndow Tinty Gallary
+
+export const WINDOW_TINTY_GLLARY = [
+  {
+    img1 :serviceWindow1,
+    img2 :serviceWindow2,
+  },
+  {
+    img1 :serviceWindow3,
+    img2 :serviceWindow4,
+  },
+  {
+    img1 :serviceWindow5,
+    img2 :serviceWindow2,
+  },
+
 ]
+
+// Wheel Repair
+
+export const WheelRepairData =[
+  {
+      title : "",
+
+      subTitle : `Here at Dipped Auto Works, we often get asked about paint protection film (PPF). What is it? How does it work? Is it really worth the money? Today, we’re here to answer all of your questions about PPF and why it’s a great investment for your vehicle.`
+  
+  },
+  {
+
+    
+      subTitle : `Paint protection film is a clear urethane film that is applied to the painted surfaces of your vehicle. It acts as a barrier between your paint and the elements, protecting your car’s finish from rocks, salt, UV rays, and other potential hazards.`
+  
+  },
+  {
+     
+
+      subTitle : `The film is applied using a wet application process. First, we clean the surface of your car to remove any dirt or debris. Next, we apply a solution that allows the film to bond with your paint. Once the solution has been applied, we lay down the film and use a squeegee to remove any bubbles or air pockets. The final step is to cure the film using UV light.`
+  
+  },
+  {
+   
+      subTitle : `Absolutely! PPF is an invisible shield for your paint job that can help maintain its showroom-quality shine for years to come. Not to mention, it can also help you avoid costly repairs down the road. If you’re looking for an affordable way to protect your investment, PPF is the way to go.`
+  
+  },
+  {
+
+
+      subTitle : `Paint protection film is a must-have for anyone who wants to keep their car looking its best. If you’re looking for an affordable way to protect your vehicle’s paint job, contact us today at Dipped Auto Works. We would be more than happy to answer any questions you have and provide you with a free quote.`
+  
+  },
+];
