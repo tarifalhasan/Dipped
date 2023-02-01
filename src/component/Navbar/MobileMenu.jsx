@@ -16,7 +16,7 @@ const MobileMenu = ({ openNavbar, isOpen }) => {
         </Link>
         <ImCross
           onClick={() => openNavbar()}
-          className="text-4xl m-2 cursor-pointer"
+          className="text-2xl m-2 cursor-pointer"
         />
       </div>
       <ul className="nav_item right-full flex flex-col gap-10  h-full  pl-10 py-9   text-left">
