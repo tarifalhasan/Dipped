@@ -43,23 +43,35 @@ const MobileMenu = ({ openNavbar, isOpen }) => {
                   bg-[#222222] divide-y divide-gray-100 absolute rounded-lg shadow w-44 `}
           >
             <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
-              <li onClick={() => openNavbar()}>
-                <Link to="services" className="drop_down_link">
+              <li className="text-lg" onClick={() => openNavbar()}>
+                <Link
+                  to="services"
+                  className="block text-lg px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white "
+                >
                   Services
                 </Link>
               </li>
-              <li onClick={() => openNavbar()}>
-                <Link to="services/quotes" className="drop_down_link">
+              <li className="text-lg" onClick={() => openNavbar()}>
+                <Link
+                  to="services/quotes"
+                  className="block text-lg px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >
                   Quotes
                 </Link>
               </li>
-              <li onClick={() => openNavbar()}>
-                <Link to="services/window_tinting" className="drop_down_link">
+              <li className="text-lg" onClick={() => openNavbar()}>
+                <Link
+                  to="services/window_tinting"
+                  className="block text-lg px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >
                   Window Tinting
                 </Link>
               </li>
-              <li onClick={() => openNavbar()}>
-                <Link to="/services/wheel_repair" className="drop_down_link">
+              <li className="text-lg" onClick={() => openNavbar()}>
+                <Link
+                  to="/services/wheel_repair"
+                  className="block text-lg px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >
                   Wheel Repair
                 </Link>
               </li>

@@ -49,7 +49,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     to="services/quotes"
-                    className=" block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white;"
+                    className=" block px-4 py-2 text-lg  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                   >
                     Quotes
                   </Link>
@@ -57,7 +57,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     to="services/window_tinting"
-                    className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white;"
+                    className="block text-lg px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white;"
                   >
                     Window Tinting
                   </Link>
@@ -65,7 +65,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     to="/services/wheel_repair"
-                    className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white;"
+                    className="block px-4 py-2 text-lg hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white;"
                   >
                     Wheel Repair
                   </Link>
