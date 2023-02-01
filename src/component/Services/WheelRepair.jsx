@@ -10,7 +10,7 @@ const WheelRepair = () => {
           <div className=" pb-20 flex flex-col gap-5 lg:flex-row">
             <div className="contact_box_2 basis-[100%] lg:basis-[40%] brounded-lg p-8">
               <h3>Ceramic Coating</h3>
-              <p className="mt-6">
+              <p className="mt-6 text-base lg:text-lg">
                 Offering quality window tinting for your vehicle
               </p>
             </div>
@@ -33,7 +33,7 @@ const WheelRepair = () => {
             <div className="mt-5 lg:px-28 2xl:px-0" key={index}>
               <div className="grid  gap-10">
                 <div>
-                  <p className="text-justify opacity-100 text-white  text-lg sm:text-xl">
+                  <p className="text-justify text-base lg:text-lg opacity-100 text-white  sm:text-xl">
                     {service.subTitle}
                   </p>
                 </div>

@@ -37,7 +37,7 @@ const Contact = () => {
         <div className="px-5 lg:px-24 pt-32">
           <div className="text-center">
             <h2>Drop Us a Line!</h2>
-            <p className="md:w-[80%] py-9 mx-auto">
+            <p className="md:w-[80%] py-9 mx-auto text-base lg:text-lg">
               Need a quote or have questions on how we can help you with your
               vehicle? Feel free to contact us anytime! We have fast response
               times and will be sure to answer your questions.

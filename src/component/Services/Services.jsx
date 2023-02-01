@@ -7,7 +7,7 @@ const Services = () => {
         <div className="px-5 lg:px-24 pt-32">
           <div className="text-left">
             <h2>Car + Vehicle Wrap</h2>
-            <p className=" py-3">
+            <p className="text-base lg:text-lg py-3">
               Specializing in all shapes+ sizes of vehicles and various
               materials
             </p>
@@ -23,7 +23,7 @@ const Services = () => {
               <div className="grid md:grid-cols-2 gap-10">
                 <div>
                   <h3 className="py-3">{service.title}</h3>
-                  <p className="text-justify opacity-100 text-white text-xl">
+                  <p className="text-justify text-base lg:text-lg opacity-100 text-white ">
                     {service.subTitle}
                   </p>
                 </div>

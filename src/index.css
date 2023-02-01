@@ -47,19 +47,13 @@ body {
 
 @layer base {
   h2 {
-    @apply font-bold text-[53px] leading-[75px] text-white;
+    @apply font-bold text-4xl leading-[75px] text-white;
   }
   h3 {
     @apply font-bold text-[31px] leading-[39px] text-white;
   }
   /* ::::::::::::::::::::::: Responsive Mobile::::::::::::::::::: */
   @media only screen and (max-width: 767px) {
-    h2 {
-      @apply font-bold text-[33px] leading-[55px] text-white;
-    }
-    h3 {
-      @apply font-bold text-[26px] leading-[39px] text-white;
-    }
   }
 }
 @layer components {
@@ -108,6 +102,15 @@ body {
     .services_slider_title h5::after {
       left: 0;
       top: 36%;
+    }
+    h2 {
+      @apply font-bold text-[32px] leading-[55px] text-white;
+    }
+    h3 {
+      @apply font-bold text-[24px] leading-[39px] text-white;
+    }
+    p {
+      @apply text-base;
     }
   }
   .casuser_container {

@@ -25,7 +25,7 @@ const Home = () => {
           <div className="flex">
             <div className="basis-full md:basis-[70%]">
               <h2>The Best Custom Automotive Shop In Las Vegas</h2>
-              <p className="py-7 text-white opacity-100">
+              <p className="py-7 text-base lg:text-lg text-white opacity-100">
                 Dipped Auto Works specializes in full-car transformations
                 including vehicle wraps, window tinting, ceramic coating, and
                 more!
@@ -65,7 +65,7 @@ const Home = () => {
           <h3 className="basis-[60%]">
             EXCEPTIONAL QUALITY COMBINED WITH QUICK & AFFORDABLE SERVICES.
           </h3>
-          <p className="basis-[40%]">
+          <p className="basis-[40%] text-base lg:text-lg">
             Dipped Auto Works not only provides Las Vegas with the best car
             wraps but we also provide superior window tinting, collision repair,
             ceramic coating and much more! We also provide inexpensive pricing
@@ -108,7 +108,7 @@ const Home = () => {
           </div>
 
           <div className="py-2 md:mt-20">
-            <p>
+            <p className="text-base lg:text-lg">
               Praesent varius est nisl, vel mollis massa malesuada non. Aenean
               nec diam ante. Interdum et malesuada fames ac ante ipsum primis in
               faucibus.
@@ -124,7 +124,7 @@ const Home = () => {
         <div className="grid overflow-hidden px-5 md:px-0  gap-5 grid-cols-1 lg:px-24 md:grid-cols-2">
           <div>
             <h3>OUR GALLERY</h3>
-            <p className="py-5">
+            <p className="py-5 text-base lg:text-lg">
               Praesent varius est nisl, vel mollis massa malesuada non. Aenean
               nec diam ante. Interdum et malesuada fames ac ante ipsum primis in
               faucibus.

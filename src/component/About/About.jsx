@@ -7,7 +7,7 @@ const About = () => {
         <div className="px-5 lg:px-24 pt-40">
           <div className="text-left lg:w-[40%]">
             <h2 className="text-4xl">OUR HISTORY</h2>
-            <p className=" py-5">
+            <p className="text-base lg:text-lg py-5">
               Dipped Auto Works not only provides Las Vegas with the best car
               wraps but we also provide superior window tinting, collision
               repair, ceramic coating and much more! We also provide inexpensive

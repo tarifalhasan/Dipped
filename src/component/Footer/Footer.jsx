@@ -50,7 +50,7 @@ const Footer = () => {
                   </span>
                 </li>
                 <li>
-                  Email : <br />
+                  Email :
                   <span className="py-3 block">
                     dippedautoworks702@gmail.com
                   </span>
