@@ -9,7 +9,7 @@ const CheckBox = ({ label }) => {
       />
       <label
         htmlFor="default-checkbox"
-        className="ml-2 text-base md:text-lg font-medium text-gray-900 dark:text-gray-300"
+        className="ml-2 text-base md:text-lg font-medium text-gray-300"
       >
         {label}
       </label>
