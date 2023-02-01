@@ -44,9 +44,9 @@ const Contact = () => {
               times and will be sure to answer your questions.
             </p>
           </div>
-          <div className=" pb-20 flex flex-col gap-5 md:flex-row">
-            <div className="contact_box_1 basis-[75%]">
-              <img className="h-full" src={image} alt="tarif" />
+          <div className=" pb-20 flex flex-col gap-5 lg:flex-row">
+            <div className="contact_box_1 basis-[100%] lg:basis-[75%]">
+              <img className="h-full mx-auto" src={image} alt="tarif" />
             </div>
             <div className="contact_box_2 bg-[#222222] rounded-lg p-8">
               <form action="post">

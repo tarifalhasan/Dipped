@@ -6,8 +6,12 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/Logo 1.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpenService, setIsOpenService] = useState(false);
   const openNavbar = () => {
     setIsOpen(!isOpen);
+  };
+  const DropDown = () => {
+    setIsOpenService(!isOpenService);
   };
   return (
     <header className="px-5 z-50 lg:px-24 fixed w-full bg-transparent">
@@ -27,8 +31,66 @@ const Navbar = () => {
               <li>
                 <Link to="/about">About</Link>
               </li>
-              <li>
-                <Link to="/services">Services</Link>
+              <li className="relative">
+                <button
+                  id="dropdownHoverButton"
+                  data-dropdown-toggle="dropdownHover"
+                  data-dropdown-trigger="hover"
+                  class="text-white inline-flex items-center"
+                  type="button"
+                  onClick={() => DropDown()}
+                >
+                  Services
+                  <svg
+                    class="w-4 h-4 ml-2"
+                    aria-hidden="true"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+
+                <div
+                  id="dropdownHover"
+                  className={`z-10 ${
+                    isOpenService ? "block" : "hidden"
+                  } bg-[#222222] divide-y divide-gray-100 absolute rounded-lg shadow w-44 `}
+                >
+                  <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
+                    <li>
+                      <Link
+                        to="servics1"
+                        className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >
+                        Quotes
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="servics1"
+                        className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >
+                        WIndow Tinting
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="servics1"
+                        className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >
+                        Wheel Repair
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li>
                 <Link to="/blog">Blog</Link>
@@ -66,8 +128,66 @@ const Navbar = () => {
               <li>
                 <Link to="/about">About</Link>
               </li>
-              <li>
-                <Link to="/services">Services</Link>
+              <li className="relative">
+                <button
+                  id="dropdownHoverButton"
+                  data-dropdown-toggle="dropdownHover"
+                  data-dropdown-trigger="hover"
+                  class="text-white inline-flex items-center"
+                  type="button"
+                  onClick={() => DropDown()}
+                >
+                  Services
+                  <svg
+                    class="w-4 h-4 ml-2"
+                    aria-hidden="true"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </button>
+
+                <div
+                  id="dropdownHover"
+                  className={`z-10 ${
+                    isOpenService ? "block" : "hidden"
+                  } bg-[#222222] divide-y divide-gray-100 absolute rounded-lg shadow w-44 `}
+                >
+                  <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
+                    <li>
+                      <Link
+                        to="servics1"
+                        className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >
+                        Quotes
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="servics1"
+                        className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >
+                        WIndow Tinting
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="servics1"
+                        className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >
+                        Wheel Repair
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li>
                 <Link to="/blog">Blog</Link>

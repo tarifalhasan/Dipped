@@ -204,4 +204,22 @@ body {
     border: none;
     color: #222222 !important;
   }
+  /* ::::::::::::::::services::::::::::::::::: */
+  .services_hero_aria {
+    background: linear-gradient(
+        90.13deg,
+        #101010 0.11%,
+        rgba(13, 13, 13, 0.791667) 77.82%,
+        rgba(0, 0, 0, 0.24) 99.89%
+      ),
+      url(../src/assets/services/services_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+  }
+  .gallary_img {
+    grid-template-columns: repeat(2, minmax(0, 300px));
+  }
 }
