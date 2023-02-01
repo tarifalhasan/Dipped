@@ -42,7 +42,7 @@ const Home = () => {
         <div className="w-[60%] float-right mt-[8%] bg-[#4ffef3] h-1"></div>
       </div>
       <div className="px-5 mt-2 md:mt-28 lg:px-24">
-        <div className="flex py-5 pt-[0rem] sm:pt-1 md:justify-end gap-5 items-start">
+        <div className="flex py-5 pt-[1rem] sm:pt-1 md:justify-end gap-5 items-start">
           <div>
             <h3>Full Car Transform</h3>
             <Link to="/">Learn more...</Link>
