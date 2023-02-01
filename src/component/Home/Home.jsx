@@ -25,7 +25,7 @@ const Home = () => {
           <div className="flex">
             <div className="basis-full md:basis-[70%]">
               <h2>The Best Custom Automotive Shop In Las Vegas</h2>
-              <p className="py-7 text-[#222] sm:text-white">
+              <p className="py-7 text-white opacity-100">
                 Dipped Auto Works specializes in full-car transformations
                 including vehicle wraps, window tinting, ceramic coating, and
                 more!
@@ -42,7 +42,7 @@ const Home = () => {
         <div className="w-[60%] float-right mt-[8%] bg-[#4ffef3] h-1"></div>
       </div>
       <div className="px-5 mt-2 md:mt-28 lg:px-24">
-        <div className="flex py-5 pt-[13rem] sm:pt-1 md:justify-end gap-5 items-start">
+        <div className="flex py-5 pt-[0rem] sm:pt-1 md:justify-end gap-5 items-start">
           <div>
             <h3>Full Car Transform</h3>
             <Link to="/">Learn more...</Link>
