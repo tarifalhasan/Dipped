@@ -7,7 +7,7 @@ const Services = () => {
         <div className="px-5 lg:px-24 pt-40">
           <div className="text-left">
             <h2 className="text-4xl">Paint Protection Film Installer</h2>
-            <p className=" py-3">
+            <p className=" py-3 text-base lg:text-lg">
               If you’re looking for an affordable way to protect your vehicle’s
               paint job, contact us today at Dipped Auto Works. We would be more
               than happy to answer any questions you have and provide you with a
@@ -27,8 +27,8 @@ const Services = () => {
             <div className="mt-5" key={index}>
               <div className="grid  gap-10">
                 <div>
-                  <h3 className="py-3 text-[30px]">{service.title}</h3>
-                  <p className="text-justify opacity-100 text-white text-lg">
+                  <h3 className="py-3 text-lg">{service.title}</h3>
+                  <p className="text-justify opacity-100 text-white text-sm md:text-lg">
                     {service.subTitle}
                   </p>
                 </div>
