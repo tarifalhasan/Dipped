@@ -90,7 +90,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="grid mt-5 gap-6 md:grid-cols-3">
         {TopStoriesClients.map((item, index) => (
           <Card
             key={index}

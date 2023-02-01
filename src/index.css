@@ -69,7 +69,7 @@ body {
     @apply block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white;
   }
   .btn_secondary {
-    @apply bg-transparent font-semibold text-xl rounded text-[#4ffef3];
+    @apply bg-transparent font-semibold text-xl border-2 border-[#4fff] rounded text-[#4ffef3];
   }
   /* ::::::+++++++ HERO ++++++::::::::::: */
   .hero_aria {
