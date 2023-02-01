@@ -30,12 +30,12 @@ const Services = () => {
                 <div className="grid gallary_img  gap-1">
                   <img
                     src={service.img1}
-                    className="block"
+                    className="block transform transition duration-500 hover:scale-90"
                     alt={service.title}
                   />
                   <img
                     src={service.img2}
-                    className="block  md:mt-10"
+                    className="block  md:mt-10 transform transition duration-500 hover:scale-90"
                     alt={service.title}
                   />
                 </div>
